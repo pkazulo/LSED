@@ -58,7 +58,6 @@ Sprawdzić sprawność metody SVM (liniowej) dla danych wykorzystywanych w czę�
 dla różnych wartości C. Porównać wyniki z metodą LDA. 
 
 LSED_7
-
   1. Zinterpertować dane dotyczące charakterystki zwierząt za pomocą heatmapy
   2. Za pomocą funkcji kmeans() sprawdzić rozpoznawanie skupień w zbiorze iris. 
   Przetestować wszystkie kombinacje zmiennych, tzn (1,2); (1,3); (1,4); (2,3); ... ;(1,2,3); (1,2,4); ... ;(1,2,3,4)
