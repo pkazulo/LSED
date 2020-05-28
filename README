@@ -1,1 +1,69 @@
-Dodano LSED_7 & 8
+LSED_0
+Sprawdzić, czy w szczególnym przypadku dyskryminacji Fisherowskiej 
+da się rozdzielić rzuty klas na optymalny kierunek a jeśli obserwacje spełniają następujące cechy: 
+  1. 3 klasy
+  2. w każdej klasie po 30 punktów z rozkładu normalnego o macierzy S=(1,0,0,1)
+  3. średnie w klasach to m1=(−1,1), m2=(2,4), m3=(−2,2)
+Wykonać odpowiedni rysunek.
+
+LSED_1
+Korzystając ze wzoru na prawdopodobieństwo a posteriori w przypadku naiwnego klasyfikatora Bayesa
+
+p(1|x)∝π1p(x|1) =π1p(x|1)p(y|1)
+
+przy założeniu, że gęstość prawdopodobieństwa w poszczególnych klasach jest opisywana rozkładem Gaussa,
+wykazać równoważność pomiędzy tym podejściem a rezultatami otrzymanymi za pomocą odpowiednika funkcji R drawparti() 
+w przypadku obserwacji spełniających następujące cechy: 
+  1. 2 klasy
+  2. w klasie "1" 40 obserwacji a w klasie "2" - 30 z rozkładu normalnego o macierzy S=(4,0,0,4)
+  3. średnie w klasach to m1=(−3,−1) oraz m2=(2,2)
+Wykonać odpowiedni rysunek.
+  
+LSED_2
+Klasyfikacja zbioru win. Dane znajduja się pod adresem https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.data,
+natomiast opis do nich jest tu: https://archive.ics.uci.edu/ml/machine-learning-databases/wine/wine.names. 
+Należy: 
+  1. wczytać dane,
+  2. nazwać kolumny (korzystając z opisu),
+  3. sprawdzić jakie są parametry klasyfikatorów LDA, QDA i NB na pełnym zbiorze danych (wszystkie składowe obserwacji),
+  4. ograniczyc się do 2 pierwszych, 5 pierwszych i 10 pierwszych składowych i sprawdzić skuteczności klasyfikatorów,
+  5. ograniczyć się do 2 pierwszych zmiennych, podzielić zbiór (PU/PW/PT) 50/25/25 i w ten sposób dokonać wyboru spośród LDA, QDA, NB.
+  6. ograniczyć się do 2 pierwszych zmiennych, wykonać kroswalidację w przypadku LDA, porównać z poprzednim punktem oraz powtórnym podstawieniem. 
+
+LSED_3
+Dla danych: S1=(4,2,2,4), S2=(4,2,2,2), m1=(-1,-1), m2=(2,2), n1=(30), n2=(20)
+wykreślić skuteczność klasyfikatora knn w funkcji liczby najbliższych sąsiadów od knn=1 do knn=21. 
+Wykonać to samo dla wartości TP i TN. Następnie wylosować dodatkowo 10 punktów z klasy 1 oraz 5 punktów z klasy 2,
+potraktować jako zbiór tetsowy i powtórzyć wykresy. W razie możliwości doknac uśrednienia po 10 losowaniach. 
+
+LSED_4
+Należy wykorzystac zbiór danych dotyczący win (LSED_2) do przetestowania algorytmu kosztu-złożoności. 
+W szczególności należy:
+  1. wczytać dane,
+  2. nazwać kolumny (korzystając z opisu),
+  3. stworzyć pełne drzewo (liście z elementami jednej klasy),
+  4. narysować pełne drzewo,
+  5. sprawdzić skuteczność pełnego drzewa przez powtórne podstawienie oraz kroswalidację,
+  6. za pomocą tabeli cp wybrać drzewo optymalne, narysować je i porównac wyniki jego skuteczności z pełnym drzewem,
+  7. stworzyć drzewo dla pierwszych: dwóch, trzech, czterach, itd. zmiennych - za każdym razem wyznaczyć drzewo optymalne,
+  8. wykreślić skuteczność drzewa w funkcji liczby użytych zmiennych, a także różnice rozmiaru drzewa pełnego i optymalnego. 
+
+LSED_5
+Należy zmodyfikowac funkcję bagging.own() z przykładu tak, aby zamiast drzew decyzyjnych wykorzystać klasyfikator LDA. 
+Następnie wykorzystać pierwotną i zmodyfikowaną funkcję do zbioru iris (podzielić zbiór PU - 80%, PT - 20%) 
+i sprawdzić liczbę błędnych klasyfikacji dla M=1,2,5,10,20,50 klasyfikatorów.
+
+LSED_6
+Sprawdzić sprawność metody SVM (liniowej) dla danych wykorzystywanych w części dotyczącej braku separowalności 
+dla różnych wartości C. Porównać wyniki z metodą LDA. 
+
+LSED_7
+
+  1. Zinterpertować dane dotyczące charakterystki zwierząt za pomocą heatmapy
+  2. Za pomocą funkcji kmeans() sprawdzić rozpoznawanie skupień w zbiorze iris. 
+  Przetestować wszystkie kombinacje zmiennych, tzn (1,2); (1,3); (1,4); (2,3); ... ;(1,2,3); (1,2,4); ... ;(1,2,3,4)
+  gdzie liczba oznacza numer kolumny. 
+
+LSED_8
+Wykonać analizę PCA dla zbioru win. Wykreślić skumulowane odchylenie standardowe 
+od liczby składowych oraz punkty w nowych zmiennych dla 1 i 2 oraz 2 i 3 składowej. 
