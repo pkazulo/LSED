@@ -1,3 +1,12 @@
+<a id="zad0"><p align="center"><b><font size=4>ZADANIE 0</font></b></p></a>
+Sprawdzić, czy w szczególnym przypadku dyskryminacji Fisherowskiej da się rozdzielić rzuty klas na optymalny kierunek \(\mathbf{a}\) jeśli obserwacje spełniają następujące cechy: 
+<ol type="i">
+    <li>3 klasy,
+    <li>w każdej klasie po 30 punktów z rozkładu normalnego o macierzy \(\mathbf{S} = \left(\begin{array}{cc}1&0\\0&1\\\end{array}\right)\), 
+    <li>średnie w klasach to \(\mathbf{m}_1 = \left(\begin{array}{c}-1\\1\\\end{array}\right)\), \(\mathbf{m}_2 = \left(\begin{array}{c}2\\4\\\end{array}\right)\), \(\mathbf{m}_3 = \left(\begin{array}{c}-2\\2\\\end{array}\right)\).
+</ol>
+Wykonać odpowiedni rysunek. Wysłać zarówno kod źródłowy jak i wynikowy rysunek w formacie PNG.
+
 LSED_0
 Sprawdzić, czy w szczególnym przypadku dyskryminacji Fisherowskiej 
 da się rozdzielić rzuty klas na optymalny kierunek a jeśli obserwacje spełniają następujące cechy: 
